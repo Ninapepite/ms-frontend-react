@@ -1,38 +1,98 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
 .App {
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-row {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+.place-search {
+  position: relative;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 1px solid #ced4da;
+  border-top: none;
+}
+
+.suggestion-item:hover {
+  background-color: #f8f9fa;
+}
+
+.alert-danger {
+  border-radius: 5px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.rapido-relax-nav {
+  padding: 10px 15px;
+  background-color: #4CAF50;
   color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.results-section {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-card {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  background-color: #4CAF50;
+  /* Vert */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.result-card a {
+  color: #007bff;
+  margin-left: 5px;
+}
+
+.result-card a:hover {
+  text-decoration: underline;
 }
